@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Responsive Navbar with Hover Effects</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="tiffin">
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">Tiffin Service</div>
+        <ul class="nav-links">
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#order">Order</a></li>
+            <li><a href="#restaurants">Restaurants</a></li>
+            <li><a href="#track-order">Track Order</a></li>
+        </ul>
+        <div class="nav-icons">
+            <form class="search-bar">
+                <input type="text" placeholder="Search...">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+            <a href="#cart" class="cart">
+                <i class="fas fa-shopping-cart"></i>
+            </a>
+        </div>
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <section class="front-page">
+        <div class="content">
+            <h1>Delicious Home-Cooked Meals Delivered to You</h1>
+            <p>Experience the taste of homemade food with our fast and reliable tiffin service.</p>
+            <div class="app-download">
+                <a href="#android"><img src="images/google .png" alt="Download on Android"></a>
+                <a href="#ios"><img src="images/app store.png" alt="Download on iOS"></a>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- Menu Section -->
+    <section class="menu">
+        <h1>Our Menu</h1>
+
+        <!-- Menu Items -->
+        <div class="menu-items">
+
+            <!-- Item 1 -->
+            <div class="menu-card">
+                <img src="images/Dal Tadka.png" alt="Dal Tadka">
+                <div class="menu-info">
+                    <h2>Dal Tadka</h2>
+                    <p>A traditional yellow lentil dish with rich spices.</p>
+                    <div class="price">$5.99</div>
+                    <div class="customize">
+                        <label for="quantity1">Quantity:</label>
+                        <input type="number" id="quantity1" value="1" min="1">
+                    </div>
+                    <button class="add-to-cart" onclick="addToCart('Dal Tadka', 5.99, 1)">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="menu-card">
+                <img src="images/Paneer Butter Masala.png" alt="Paneer Butter Masala">
+                <div class="menu-info">
+                    <h2>Paneer Butter Masala</h2>
+                    <p>Paneer cubes in a creamy tomato-based sauce.</p>
+                    <div class="price">$7.99</div>
+                    <div class="customize">
+                        <label for="quantity2">Quantity:</label>
+                        <input type="number" id="quantity2" value="1" min="1">
+                    </div>
+                    <button class="add-to-cart" onclick="addToCart('Paneer Butter Masala', 7.99, 2)">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="menu-card">
+                <img src="images/Vegetable Biryani.png" alt="Vegetable Biryani">
+                <div class="menu-info">
+                    <h2>Vegetable Biryani</h2>
+                    <p>Fragrant basmati rice cooked with vegetables and spices.</p>
+                    <div class="price">$6.99</div>
+                    <div class="customize">
+                        <label for="quantity3">Quantity:</label>
+                        <input type="number" id="quantity3" value="1" min="1">
+                    </div>
+                    <button class="add-to-cart" onclick="addToCart('Vegetable Biryani', 6.99, 3)">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Item 4 -->
+            <div class="menu-card">
+                <img src="images/Chole Bhature.png" alt="Chole Bhature">
+                <div class="menu-info">
+                    <h2>Chole Bhature</h2>
+                    <p>Spicy chickpea curry served with fried bread.</p>
+                    <div class="price">$8.99</div>
+                    <div class="customize">
+                        <label for="quantity4">Quantity:</label>
+                        <input type="number" id="quantity4" value="1" min="1">
+                    </div>
+                    <button class="add-to-cart" onclick="addToCart('Chole Bhature', 8.99, 4)">Add to Cart</button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="menu-items">
+
+            <!-- Item 1 -->
+            <div class="menu-card">
+                <img src="images/Aloo gobhi.png" alt="Dal Tadka">
+                <div class="menu-info">
+                    <h2>Aloo Gobhi</h2>
+                    <p>A traditional yellow lentil dish with rich spices.</p>
+                    <div class="price">$5.99</div>
+                    <div class="customize">
+                        <label for="quantity1">Quantity:</label>
+                        <input type="number" id="quantity1" value="1" min="1">
+                    </div>
+                    <button class="add-to-cart" onclick="addToCart('Dal Tadka', 5.99, 1)">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="menu-card">
+                <img src="images/Jeera rice.png" alt="Paneer Butter Masala">
+                <div class="menu-info">
+                    <h2>Jeera Rice</h2>
+                    <p>Paneer cubes in a creamy tomato-based sauce.</p>
+                    <div class="price">₹347.99</div>
+                    <div class="customize">
+                        <label for="quantity2">Quantity:</label>
+                        <input type="number" id="quantity2" value="1" min="1">
+                    </div>
+                    <button class="add-to-cart" onclick="addToCart('Paneer Butter Masala', 7.99, 2)">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="menu-card">
+                <img src="images/tandur Naan.png" alt="Vegetable Biryani">
+                <div class="menu-info">
+                    <h2>Tanduri Naan</h2>
+                    <p>Fragrant basmati rice cooked with vegetables and spices.</p>
+                    <div class="price">$6.99</div>
+                    <div class="customize">
+                        <label for="quantity3">Quantity:</label>
+                        <input type="number" id="quantity3" value="1" min="1">
+                    </div>
+                    <button class="add-to-cart" onclick="addToCart('Vegetable Biryani', 6.99, 3)">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Item 4 -->
+            <div class="menu-card">
+                <img src="images/salad raita.png" alt="Chole Bhature">
+                <div class="menu-info">
+                    <h2>salaad Raita</h2>
+                    <p>Spicy chickpea curry served with fried bread.</p>
+                    <div class="price">$8.99</div>
+                    <div class="customize">
+                        <label for="quantity4">Quantity:</label>
+                        <input type="number" id="quantity4" value="1" min="1">
+                    </div>
+                    <button class="add-to-cart" onclick="addToCart('Chole Bhature', 8.99, 4)">Add to Cart</button>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Cart Section -->
+    <section class="cart">
+        <h1>Your Order</h1>
+        <div class="cart-items" id="cart-items">
+            <p>No items in your cart yet.</p>
+        </div>
+        <div class="cart-summary">
+            <h2>Total: <span id="cart-total">$0.00</span></h2>
+            <button class="checkout">Checkout</button>
+        </div>
+    </section>
+
+
+    <!-- Ratings and Reviews Section -->
+    <section class="reviews-section">
+        <h1>Ratings & Reviews</h1>
+
+        <!-- Review Form -->
+        <div class="review-form">
+            <h2>Leave a Review</h2>
+            <form id="review-form">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" required>
+
+                <label for="rating">Rating:</label>
+                <div class="stars" id="rating-stars">
+                    <span data-rating="1">&#9733;</span>
+                    <span data-rating="2">&#9733;</span>
+                    <span data-rating="3">&#9733;</span>
+                    <span data-rating="4">&#9733;</span>
+                    <span data-rating="5">&#9733;</span>
+                </div>
+
+                <label for="review-text">Review:</label>
+                <textarea id="review-text" rows="5" required></textarea>
+
+                <button type="submit">Submit Review</button>
+            </form>
+        </div>
+
+        <!-- Display Reviews -->
+        <div class="reviews-display" id="reviews-display">
+            <h2>Customer Reviews</h2>
+            <!-- Reviews will be displayed here dynamically -->
+        </div>
+    </section>
+
+
+       <!-- Authentication Section -->
+       <section class="auth-section">
+        <!-- Login Form -->
+        <div class="auth-form" id="login-form">
+            <h2>Login</h2>
+            <form>
+                <label for="login-email">Email:</label>
+                <input type="email" id="login-email" required>
+
+                <label for="login-password">Password:</label>
+                <input type="password" id="login-password" required>
+
+                <button type="button" onclick="loginUser()">Login</button>
+
+                <p>Don't have an account? <a href="#" onclick="showSignUp()">Sign Up</a></p>
+            </form>
+        </div>
+
+        <!-- Sign Up Form -->
+        <div class="auth-form" id="signup-form" style="display: none;">
+            <h2>Create Account</h2>
+            <form>
+                <label for="signup-name">Name:</label>
+                <input type="text" id="signup-name" required>
+
+                <label for="signup-email">Email:</label>
+                <input type="email" id="signup-email" required>
+
+                <label for="signup-password">Password:</label>
+                <input type="password" id="signup-password" required>
+
+                <button type="button" onclick="signUpUser()">Sign Up</button>
+
+                <p>Already have an account? <a href="#" onclick="showLogin()">Login</a></p>
+            </form>
+        </div>
+
+        <!-- Profile Section (After Login) -->
+        <div class="profile-section" id="profile-section" style="display: none;">
+            <h2>Welcome, <span id="profile-name"></span></h2>
+            <p>Email: <span id="profile-email"></span></p>
+            <button onclick="logout()">Logout</button>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="footer-container">
+          <div class="footer-section">
+            <h3>About Us</h3>
+            <p>We provide fresh, healthy, and delicious homemade meals delivered straight to your door.</p>
+          </div>
+      
+          <div class="footer-section">
+            <h3>Contact Us</h3>
+            <ul>
+              <li>Email: info@tiffinservice.com</li>
+              <li>Phone: +1 234 567 890</li>
+              <li>Address: 123 Food Street, City, Country</li>
+            </ul>
+          </div>
+      
+          <div class="footer-section">
+            <h3>Follow Us</h3>
+            <ul class="social-icons">
+              <li><a href="#"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+              <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+              <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+            </ul>
+          </div>
+      
+          <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Order</a></li>
+              <li><a href="#">Restaurant</a></li>
+              <li><a href="#">Tracj Orders</a></li>
+            </ul>
+          </div>
+        </div>
+      
+        <div class="footer-bottom">
+          <p>&copy; 2024 Tiffin Service. All Rights Reserved.</p>
+        </div>
+      </footer>
+      
+
+
+
+
+
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="main.js"></script>
+
+</div>
+
+
+</body>
+</html>
